@@ -372,6 +372,7 @@ static int getargs(int argc, char **argv, struct Args *args)
         case 38400: args->baud = SPABAUD_38400; break;
         case 57600: args->baud = SPABAUD_57600; break;
         case 115200: args->baud = SPABAUD_115200; break;
+	case 460800: args->baud = SPABAUD_460800; break;
         default:
           fprintf(stderr, "Baudrate '%s' unknown\n", optarg);
           res = 0;
